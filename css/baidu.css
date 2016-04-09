@@ -1,0 +1,625 @@
+/*test4.3 百度首页  前端6期3班 樊融*/
+body,ul,li,h1,h3{
+	margin: 0;
+	padding: 0;
+}
+/*pc版主面板*/
+#con_pc{
+	width: 100%;
+	font-size: 13px;
+    text-align: center; 
+    min-width: 900px;
+ 	background-attachment:fixed;
+ 	font-style: normal;
+}
+/*头部搜索框*/
+#topSearchCon{
+	display: none;
+	position: fixed;
+	height: 100px;
+	width: 100%;
+	line-height: 100px;
+	background: #fff;
+	overflow: hidden;
+	min-width: 900px;
+}
+#topSearchCon img{
+	margin-right:20px;
+	position: relative;
+	top: -5px;
+}
+.topSearchCenter{
+	margin: 10px auto;
+}
+.topSearch{
+	display: inline-block;
+	overflow: hidden;
+	width: 641px;
+	box-shadow: 0px 0px 10px rgba(50,50,50,0.2);
+	height: 40px;
+}
+#topSearchCon .topText{
+    width:538px;
+    height:40px;
+   	border:none;
+   	float: left;
+   	background: #fff;
+}
+#topSearchCon .textInner{
+	width: 535px;
+    height: 38px;
+    padding: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    float: left;
+    border:0;
+    line-height: 40px;
+    border: 1px solid #38f;
+}
+/*百度一下*/
+#topSearchCon .topSubmit{
+	float: left;
+	width:104px;
+    height:41px;
+ 	background-color:#38f;
+	border: 0px;
+	font-size: 18px;
+	margin-right:-3px;
+	color: #fff;
+}
+
+/*改变皮肤容器*/
+#changeSkinCon{
+	display: none;
+	position: fixed;
+	width: 100%;
+	background: #fff;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+.skinHead{
+	height: 50px;
+	line-height: 50px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.skinHead span{
+	float: left;
+}
+.skinHead li{
+	display: block;
+	padding: 0 15px;
+	float: left;
+	height: 50px;
+}
+.skinHead li:hover{
+	background:#38f;
+	color: #fff;
+}
+.skinNavBlue{
+	background:#38f;
+	color: #fff;
+}
+.skinBody{
+	width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.skinBox{
+	display: none;
+	width: 65%;
+	float: left;
+}
+.skinBox img{
+	width: 100%;
+}
+.skinBox .imgBig{
+	display:block;
+	float: left;
+	position: relative;
+	width: 215px;
+	padding-bottom: 1px;
+}
+.skinBox .imgSmall{
+	display:block;
+	float: left;
+	position: relative;
+	width: 106px;
+	margin-left:1px;
+	margin-right: 1px;
+}
+.img-shadow{
+	display: none;
+	position: absolute;
+	background: rgba(0,0,0,0.5);
+	width:100%;
+	height:100%;
+	color: #fff;
+}
+.img-shadow p{
+	font-size: 12px;
+	padding-top:25%;
+	margin: 0;
+}
+
+.skinBoxShow{
+	display:flex;
+}
+.imgBox1{
+	flex: 2;
+}
+.imgBox2{
+	flex: 1;
+}
+.imgBox3{
+	flex: 2;
+}
+.imgBox4{
+	flex: 1;
+}
+.skinPreview{
+	width: 35%;
+	float: right;
+}
+.skinPreview img{
+	width: 250px;
+	display: block;
+	margin: 20px auto;
+	border: 1px solid #fff;
+}
+.set-skin{
+	float: right;
+	margin-right: 100px;
+}
+.set-skin span{
+	margin:0 10px;
+}
+.set-skin span:hover{
+	color: #38f;
+}
+
+/*头部nav*/
+#head_pc nav{
+	height: 32px;
+	font-size: 13px;
+	background:rgba(0,0,0,0.2);
+	color: #fff ;
+}
+/*头部左浮动*/
+.head_top_left{
+	float: left;
+}
+/*头部右浮动*/
+.head_top_right{
+	float: right;
+	font-weight: bold;
+}
+/*头左两部分*/
+.head_top_left .s_weather,.s_icons{
+	display: inline-block;
+	line-height: 32px;
+	float: left;
+}
+/*weather的em*/
+.s_weather em{
+	font-style:normal;
+	margin-left: 15px;
+}
+/*天气展开*/
+#weatherOuter{
+	display: none;
+	position: fixed;
+	top:32px;
+	left: 0;
+	width: 600px;
+	height: 250px;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #666;
+}
+#weatherOuter p{
+	margin: 0;
+	padding: 0;
+}
+ #weatherOuter .searchWeather{
+	color: #38f;
+	display: inline-block;
+	clear: both;
+}
+#weatherOuter .date{
+	margin:5px 20px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+.weatherSeven{
+	display: flex;
+	margin:0 20px;
+}
+.weatherOneday{
+	flex:1;
+}
+.weatherImg{
+	width: 80px;
+	height: 80px;
+	margin:0 auto;
+	background-image: url(../img/weathersprite.png);
+}
+.weatherImg2{
+	background-position:0px -70px;
+}
+.weatherImg3{
+	background-position:0px -150px;
+}
+
+
+/*头部链接基本样式*/
+#head_pc a{
+	line-height: 32px;
+    margin-left: 15px;
+	color: #fff;
+}
+/*设置*/
+.set{
+	float: right;
+	height: 32px;
+	width: 60px;
+}
+/*设置下拉框*/
+.setHover{
+	display: none;
+	position: fixed;
+	top:32px;
+	width:70px;
+	background: #fff;
+	color: #000;
+}
+/*下拉框a标签*/
+#head_pc .setHover a{
+	color:#555;
+	margin: 0;
+	font-weight: normal;
+	text-decoration:none;
+	display: block;
+	width:70px;
+}
+/*等多产品*/
+#head_pc .outer {
+    float: right;
+    width: 90px;
+    height: 32px;
+    background:#38f; 
+	color:#fff;
+}
+/*更多产品下拉框*/
+#head_pc .more{
+	display: none;
+	position:absolute;
+	width: 90px;
+	text-align: center;
+	background: #fff;
+	float: right;
+}
+/*更多产品下拉框a链接*/
+#head_pc .more-a{
+	color:#555;
+	width: 90px;
+	margin: 0 auto;
+	font-weight: normal;
+	text-decoration:none;
+}
+#head_pc .more-a:hover{
+	text-decoration: underline;
+}
+.more-a img{
+	display: block;
+	margin: 0 auto;
+	border-top: 1px solid #ccc;
+}
+
+/*更多产品蓝色*/
+#head_pc .more-btn{
+	width: 90px;
+	margin: 0;
+}
+
+/*搜索框*/
+#main_pc #search{
+	overflow: hidden;
+	width: 641px;
+	margin: 0 auto;
+}
+/*logo-img*/
+#main_pc #logo_pc{
+	width:270px;
+	height:129px; 
+}
+#search{
+	box-shadow: 0px 0px 10px rgba(50,50,50,0.2);
+}
+/*搜索框*/
+#main_pc .text{
+    width:538px;
+    height:40px;
+   	border:none;
+   	float: left;
+   	background: #fff;
+}
+.textInner{
+	border: 1px solid #ccc;
+	width: 526px;
+    height: 37px;
+	line-height:39px;
+	font-size: 16px;
+	padding-left:10px;
+    outline: none;
+}
+/*百度一下*/
+#main_pc .submit{
+	float: left;
+	width:104px;
+    height:41px;
+	border: 0px;
+	font-size: 18px;
+	margin-right:-3px;
+}
+/*新闻部分*/
+#section_pc{
+	padding:50px 0;
+	width: 895px;
+	margin: 0 auto;
+}
+/*新闻部分导航ul*/
+#section_pc ul{
+	display: block;	
+	overflow: hidden;
+	padding: 0;
+	margin-bottom: 1px;
+	font-size: 14px;
+	background:rgba(255,255,255,0.6);
+}
+/*新闻导航部分li*/
+.section-nav-btn {
+	float: left;
+	display: inline-block; 
+	color: #000;
+	height: 40px;
+	width: 80px;
+	line-height: 40px;
+	text-decoration: none;
+}
+/*新闻导航部分li滑动后效果*/
+.section-nav-btn:hover{
+	background:rgba(0,0,0,0.1);
+}
+/*新闻导航部分li点击后效果*/
+.sectionClick{
+	background:rgba(0,0,0,0.2);
+	font-weight: bold;
+}
+/*主体*/
+.section{
+	display: none;
+	width: 895px;
+    min-height: 363px;
+    background:rgba(255,255,255,0.6);
+    overflow: hidden;
+}
+.section em,a{
+	font-style: normal;
+}
+.sectionShow{
+	display: block;
+}
+.collectCon{
+	margin: 20px;
+}
+.section-collect em{
+	text-align: left;
+}
+.section-set{
+	display: inline-block;
+	line-height: 32px;
+	float: right;
+	margin:10px 20px;
+	width: 20px;
+	height: 20px;
+	background: url(../img/icon.png) left no-repeat;
+    background-position: -120px -48px;
+}
+.videoCon{
+	margin: 20px;
+	overflow: hidden;
+}
+.videoBlock{
+	position: relative;
+	width: 25%;
+	float: left;
+}
+.videoBlock .videoText{
+	display: inline-block;
+	height: 50px;
+    width: 176px;
+    background: #fff;
+    color:#555;
+    text-align: left;
+    font-size: 15px;
+    padding: 0 9px;
+}
+.videoBottom{
+	margin-bottom: 17px;
+}
+.icoMovie{
+	position: absolute;
+	display: block;
+	width: 42px;
+	height: 42px;
+	background-image:url("../img/video/videobar.png");
+    background-position:-83 0;
+    top: 0;
+    right:10px;
+}
+.icoMovie:hover{
+	background-image:url("../img/video/vicon.png");
+	background-position: -96px 0;
+    top: -20px;
+    right: 15px;
+}
+/*推荐*/
+.myfocus-recommend{
+	display: block;
+	padding: 20px 0;
+	color: #999;
+}
+/*新闻左侧*/
+#section-myfocus .myfocus-left{
+	width: 65%;
+	float: left;
+}
+/*新闻块*/
+.myfocus-block{
+	position: relative;
+	padding: 10px;
+	margin-left:10px;
+	text-align: left;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+/*新闻头部标题*/
+.myfocus-head h2{
+	margin: 0;
+}
+/*新闻头部*/
+.myfocus-head{
+	display: inline-block;
+	float: left;
+	z-index: 0;
+}
+/*新闻图片*/
+.myfocus-img{
+	display: inline-block;
+	float: right;
+}
+/*新闻页脚*/
+.myfocus-footer{
+	position:absolute;
+	display:inline-block;
+	color: #999;
+	bottom:10px;
+	left:10px;
+}
+/*右侧*/
+#section-myfocus .myfocus-right{
+	width: 34%;
+	float: right;
+	background:rgba(255,255,255,0);
+	margin-left: 5px;
+}
+#section-myfocus .myfocus-right-main{
+	background:rgba(255,255,255,0);
+}
+.myfocus-right-top{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+}
+.myfocus-right-top a{
+	text-decoration: none;
+	color: #000;
+}
+.myfocus-right-top .hot{
+	display: block;
+	float: left;
+}
+.myfocus-right-top .change{
+	display: block;
+	float: right;
+	padding-right: 30px;
+}
+.myfocus-right-main li{
+	width:50%;
+    float: left;
+    display: block; 
+    margin:8px 0;
+    text-align: left;
+}
+.myfocus-right-main a{
+	text-decoration: none;
+	color: #000;
+	font-size: 15px;
+}
+.myFocusIco {
+    background: url(../img/myFocusiconL.png) left no-repeat;
+    line-height: 30px;
+    text-indent: 18px;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    height: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.myFocusClickIco {
+    background: url(../img/myFocusiconR.png) left no-repeat;
+}
+
+
+
+#goTop{
+	display: none;
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: rgba(0,0,0,0.3);
+	z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    margin-left: 465px;
+}
+#goTopText{
+	display: none;
+}
+
+/*网页底部*/
+#footer_pc{
+	width: 100%;
+	height: 100%;
+	margin:0 auto;
+	text-align:center;
+	font-size: 12px;
+}
+
+/*广告div样式--已隐藏*/
+.ad{
+	display: none;
+}
+/*里层广告样式*/
+.ad_block1{
+	display: inline-block;
+	margin-left: 25px;
+}
+.ad_block2{
+	display: inline-block;
+	margin-left: 25px;
+}
+/*里层广告文本样式*/
+.adtext{
+	display: inline-block;
+	position: relative;
+	top:-10px;
+}
+/*关于百度*/
+.aboutbaidu{
+	display:block;
+	line-height: 30px;
+	color:#555;
+}
+#footer_pc .aboutbaidu a{
+	color:#333;
+}
+#con_mobile{
+	display: none;
+}

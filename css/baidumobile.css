@@ -1,0 +1,303 @@
+/*移动页面主体*/
+#con_mobile{
+	width: 100%;
+	position: relative;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	background: #eee;
+	min-width: 320px;
+}
+/*首部*/
+#head_mobile{
+	height: 54px;
+}
+/*天气*/
+#weather{
+	float: left;
+	margin: 10px 0 0 10px;
+	color: #666;
+}
+/*气温*/
+.weather_num{
+	display: inline-block;
+	font-size: 20px;
+	height: 24px;
+}
+/*空气质量*/
+.weather_status{
+	display: inline-block;
+}
+/*天气两行*/
+#weather p{
+	display:block;
+	font-size: 12px;
+	margin: 0;
+	text-align: left;
+}
+/*更多下拉*/
+.icon-more-down:before {
+	font-family:"iconfont";
+	font-style:normal;
+	content:"\e641"; 
+	display: inline-block;
+	font-size:16px;
+}
+/*登录链接*/
+#login{
+	float: right;
+	display: block;
+	margin: 10px 10px 0 0;
+	text-decoration: none;
+}
+/*登录*/
+.icon-login:before { 
+	font-family:"iconfont";
+	font-style:normal;
+	content: "\e62f"; 
+	color: #666;
+	font-size:20px;	
+}
+/*百度图标*/
+#logo_mobile{
+	width: 175px;
+	height: 55px;
+	padding: 17px 0 15px;
+}
+/*搜索大框*/
+#index_form {
+	position: relative;
+    margin: 0 10px;
+    height: 42px;
+    background: #fff;
+    border: 1px solid #949494;
+    border-bottom-color: #bcbcbc; 
+    overflow: hidden;
+}
+/*搜索按钮*/
+#index_bn{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 20%
+    top: -1px;
+    right: -1px;
+    background: #38f;
+    color: #fff;
+    line-height: 42px;
+    font-size: 16px;
+    border: 0px;
+}
+/*搜索文字输入*/
+textarea{
+	display:inline-block;
+	float: left;
+	border: 0;
+	padding: 0;
+	padding-left: 5px;
+    height: 42px;
+    width: 80%;
+    font-size: 18px;
+    line-height: 42px;
+}
+#navs{
+	margin: 17px auto;
+    overflow: hidden;
+}
+#navs a{
+	display:inline-block;
+	width: 15%;
+	font-size: 14px;
+	color: #666;
+	text-decoration: none;
+}
+#navs a p{
+	margin: 5px 0 10px 0;
+	font-size: 12px;
+}
+.ad{
+	position: relative;
+	display: inline-block;
+	width: 95%;
+	height: 40px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+.ad_img{
+	width: 300px;
+	height: 40px;
+}
+.ad_link{
+	display: inline-block;
+	text-decoration: none;
+	line-height: 40px;
+}
+.icon-close:before{
+	position:absolute;
+	width: 30px;
+	top: 0px;
+	right: 0px;
+	display: inline-block;
+	line-height: 40px;
+	height: 40px;
+	font-family:"iconfont";
+	font-style:normal;
+ 	content: "\e68f"; 
+ 	color: #666;
+	font-size:20px;	
+}
+#news{
+	display: block;
+	width: 95%;
+	background:#fff;
+	margin: 5px auto;
+}
+.card_head{
+	position: relative;
+	height: 40px;
+	background: #fff;
+}
+.card_head h4{
+	display: inline-block;
+	float: left;
+	text-align: left;
+	line-height: 40px;
+	margin: 0 14px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+}
+.card_head .refresh{
+	position: absolute;
+	display: inline-block;
+	line-height: 40px;
+    top: 0;
+    right: 30px;
+    width: 82px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    color: #262626;
+    font-size: 14px;
+    text-align: center;
+	
+}
+.refresh:before{
+	display: inline-block;
+	line-height: 40px;
+	font-family:"iconfont";
+	font-style:normal;
+ 	content: "\e686"; 
+ 	color: #aaa;
+	font-size:20px;	
+}
+.icon-edit:after{
+	position: absolute;
+	display: inline-block;
+	font-family: "iconfont";
+	content: "\e61e";
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-style: normal;
+	color: #aaa;
+	font-size:20px;	
+	right: 0px;
+}
+.card_body ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	padding: 0 14px;
+	text-align: left;
+}
+.card_body li{
+	width: 50%;
+	display: inline-block;
+	height: 42px;
+    line-height: 42px;
+    float: left;
+}
+.card_body li a{
+	text-decoration: none;
+	display: inline-block;
+	color: #000;
+	height: 42px;
+}
+.card_body li a.hot:after{
+	position: relative;
+	font-family: "iconfont";
+	content: "\e60b";
+	color: #f00;
+	font-size:18px;
+	top: -10px;
+	left: -1px;
+}
+.card_footer{
+	text-align: right;
+}
+.card_footer a{
+	display:inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding-right: 14px;
+	text-decoration: none;
+	color: #0058d2;
+}
+#card_manage{
+	padding: 0;
+    line-height: 45px;
+    height: 45px;
+    color: #333;
+    font-size: 14px;
+    text-indent: -8px;
+    background: #fff;
+}
+#about_baidu{
+	text-align:left;
+}
+#about_head a{
+	display: block;
+	padding-left: 21px;
+	height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+    color: #555;
+    text-decoration: none;
+}
+#about_head .hot:before{
+	font-family: "iconfont";
+	content: "\e60b";
+	font-style: normal;
+	font-size: 20px;
+	color: #f00;
+}
+/*未下载百度图标*/
+#about_head .baidu:before{
+	display: inline-block;
+	background-size: 20px;
+	background:url(logo.ico);
+}
+#about_footer{
+	margin:3px 0;
+    font-size: 13px;
+    text-align: center;
+}
+.icon-advice:before{
+	font-family: "iconfont";
+	content: "\e6cb";
+	font-style: normal;
+	font-size: 20px;
+	color: #aaa;
+}
+#about_footer a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	text-decoration: none;
+	color: #555;
+}
+#con_pc{
+	display: none;
+}
