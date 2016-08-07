@@ -15,21 +15,4 @@
     "url": "/projects",
     "icon": "fa-desktop"
   }
-  // {
-  //   "text": "Resume",
-  //   "url": "#",
-  //   "icon": "fa-graduation-cap",
-  //   "layout": "post"
-  // },
-  // {
-  //   "text": "Github",
-  //   "url": "",
-  //   "icon": "fa-github"
-  // },
-  // {
-  //   "text": "XML Feed",
-  //   "url": "/feed.xml",
-  //   "icon": "fa-feed",
-  //   "target": _blank
-  // }
 ]
