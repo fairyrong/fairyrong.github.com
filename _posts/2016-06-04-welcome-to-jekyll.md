@@ -4,7 +4,7 @@ title:  "Jekyll!"
 date:   2016-06-04 13:50:39
 categories: jekyll
 ---
-本博客参照http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html搭建
+  本博客参照[此教程](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)搭建
 jekyll的一些使用方法：You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
