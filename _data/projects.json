@@ -8,14 +8,14 @@
 	},
 	{
 		"name": "外研社外语学习组员库(iLearning)",
-		"image": "搜狗截图20170612220401.png",
+		"image": "http://fairyrong.github.io/static/img/搜狗截图20170612220401.png",
 		"url": "http://testilearningapi.unipus.cn/home.html",
 		"date": "2016-11",
 		"tags": ["fis3","jQuery","Ajax"]
 	},
 	{
 		"name": "泰博互联Mooc平台",
-		"image": "搜狗截图20170612221257.png",
+		"image": "http://fairyrong.github.io/static/img/搜狗截图20170612221257.png",
 		"url": "http://mooc.inxedu.com/quest/toQuestionitemList",
 		"date": "2016-08",
 		"tags": ["JQuery","响应式"]
