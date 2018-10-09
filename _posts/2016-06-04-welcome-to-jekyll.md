@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Jekyll!"
-date:   2016-06-04 13:50:39
+date: 2016-06-04 13:50:39
 categories: 前端 jekyll
 ---
 ##  - 关于Jekyll
