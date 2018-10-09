@@ -5,6 +5,8 @@ date:   2018-04-02 20:50:42
 categories: vue
 ---
 vuemusic慕课网实战视频，实践中学习是最好的途径，一个音乐APP从环境，安装，项目结构/搭建,到vue全家桶的应用，学习笔记
+![image](http://fairyrong.github.io/assets/music1.png)
+![image](http://fairyrong.github.io/assets/music2.png)
 ## 1.vuex
 在src文件夹下新建一个store文件夹，该文件夹下有多个js文件
 
